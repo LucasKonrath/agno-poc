@@ -64,3 +64,6 @@ Adjust these to match your runtime and provider.
 
 ## Tracing
 <img width="1600" height="911" alt="image" src="https://github.com/user-attachments/assets/dd6913e9-8e8b-42bc-bab6-b2de73eb3029" />
+
+<img width="1467" height="613" alt="image" src="https://github.com/user-attachments/assets/ca648beb-f37b-4bb6-bd3a-2d50c3b0d32a" />
+
