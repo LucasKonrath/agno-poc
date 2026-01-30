@@ -17,6 +17,7 @@ from agents.knowledge_agent import knowledge_agent
 from agents.mcp_agent import mcp_agent
 from agents.pal import pal, pal_knowledge
 from agents.hackernews_agent import hackernews_agent
+from agents.youtube_summarizer import youtube_summarizer_agent
 from teams.test_team import team as test_team
 from db import get_postgres_db
 
@@ -27,7 +28,7 @@ agent_os = AgentOS(
     name="AgentOS",
     tracing=True,
     db=get_postgres_db(),
-    agents=[pal, knowledge_agent, mcp_agent, hackernews_agent],
+    agents=[pal, knowledge_agent, mcp_agent, hackernews_agent, youtube_summarizer_agent],
     teams=[test_team],
     knowledge=[pal_knowledge],
     config=str(Path(__file__).parent / "config.yaml"),
