@@ -1,3 +1,4 @@
+```
 (agno-poc) lucasdamaceno@Lucass-MacBook-Pro agno-poc % python agent.py 
 ┏━ Message ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃                                                                                                                         ┃
@@ -236,4 +237,5 @@ INFO Found 1 documents
 ┃ If you tell me (a) batch vs streaming, (b) data volume + peak rates, (c) where sources/consumers live, and (d) whether  ┃
 ┃ you want a warehouse-first vs lake-first setup, I can give a sharper recommendation (and an egress-minimizing           ┃
 ┃ architecture sketch).                                                                                                   ┃
-┃                                                              
+┃
+                                                              
