@@ -23,6 +23,7 @@ dependencies = [
   "mcp",
   "reportlab",
   "duckduckgo-search",
+  "yfinance",
   # Tracing
   "opentelemetry-api",
   "opentelemetry-sdk",
