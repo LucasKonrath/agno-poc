@@ -12,6 +12,7 @@ from os import getenv
 from pathlib import Path
 
 from agno.os import AgentOS
+from agno.os.interfaces.whatsapp import Whatsapp
 
 from agents.knowledge_agent import knowledge_agent
 from agents.mcp_agent import mcp_agent
@@ -20,6 +21,7 @@ from agents.hackernews_agent import hackernews_agent
 from agents.youtube_summarizer import youtube_summarizer_agent
 from teams.test_team import team as test_team
 from db import get_postgres_db
+from agents.whatsapp_agent import basic_agent
 
 # ============================================================================
 # Create AgentOS
@@ -28,9 +30,10 @@ agent_os = AgentOS(
     name="AgentOS",
     tracing=True,
     db=get_postgres_db(),
-    agents=[pal, knowledge_agent, mcp_agent, hackernews_agent, youtube_summarizer_agent],
+    agents=[pal, knowledge_agent, mcp_agent, hackernews_agent, youtube_summarizer_agent, basic_agent],
     teams=[test_team],
     knowledge=[pal_knowledge],
+    interfaces=[Whatsapp(agent=basic_agent)],
     config=str(Path(__file__).parent / "config.yaml"),
 )
 
